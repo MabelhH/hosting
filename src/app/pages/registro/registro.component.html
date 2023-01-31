@@ -1,0 +1,45 @@
+<div class="container">
+    <h1>Registro</h1>
+    <div class="formulario">
+        <form [formGroup]="forRegistro">
+            <br>
+            <div class="row">
+                <div class="col-1">
+               <label for="nombre" class="form-label"><strong>Nombre:</strong></label>
+                </div>
+               <div class="col-10">
+                 <input type="text" formControlName="nombre" class="form-control" id="nombre" >
+               </div>
+               </div>
+               <br>
+               <div class="row">
+                <div class="col-1">
+               <label for="apellido" class="form-label"><strong>Apellido:</strong></label>
+                </div>
+               <div class="col-10">
+                 <input type="text" formControlName="apellido" class="form-control" id="apellido" >
+               </div>
+               </div>
+               <br>
+            <div class="row">
+               <div class="col-1">
+              <label for="email" class="form-label"><strong>Email:</strong></label>
+               </div>
+              <div class="col-10">
+                <input type="email" formControlName="email" class="form-control" id="email" >
+              </div>
+              </div>
+              <br>
+            <div class="row">
+              <div class="col-1">
+              <label for="password" class="form-label"><strong>Password:</strong></label>
+              </div>
+              <div class="col-10">
+              <input type="password" formControlName="password" class="form-control" id="password">
+            </div>
+            </div>
+            <br>
+            <button type="submit"  [disabled]="forRegistro.invalid" class="btn btn-primary" (click)="onSubmit()">Registro</button>
+        </form>
+    </div>
+</div>

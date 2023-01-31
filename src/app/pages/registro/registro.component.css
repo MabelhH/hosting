@@ -1,0 +1,27 @@
+.container{
+    margin-top: 45px;
+    border-radius: 6px;
+    padding: 8px;
+  
+}
+h1{
+    text-align: center;
+    font-family:sans-serif;
+    background-color: cadetblue;
+    border-radius: 4px;
+    margin: 0px;
+    padding: 0px;
+    
+
+}
+label{
+    font-size: 20px;
+    margin-left: 15px;
+}
+input{
+margin-left: 25px;
+}
+.formulario{
+    background-color: rgb(208, 210, 212);
+    padding: 10px;
+}
